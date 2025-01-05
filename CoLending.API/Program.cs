@@ -118,7 +118,7 @@ builder.Services.AddAuthentication("Bearer")
     };
 });
 
-var DevelopmentOptions = builder.Configuration.GetSection("FleetConfiguration").Get<ConfigurationOptions>();
+var DevelopmentOptions = builder.Configuration.GetSection("Configuration").Get<ConfigurationOptions>();
 builder.Services.AddHttpContextAccessor();
 if (DevelopmentOptions.VaptSetting == "0")
 {
