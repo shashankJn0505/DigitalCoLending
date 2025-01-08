@@ -8,7 +8,7 @@ namespace CoLending.Core.Options
 {
     public class ConfigurationOptions
     {
-        public const string Configuration = "ConfigurationOptions";
+        public const string Configuration = "Configuration";
         public int? EncryptDecryptEnable { get; set; }
         public string EncryptionKey { get; set; } = string.Empty;
         public string ReqEncryptKey { get; set; } = string.Empty;
